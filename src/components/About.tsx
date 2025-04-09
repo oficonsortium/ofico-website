@@ -72,8 +72,13 @@ const About = () => {
             {/* Open Source Collective */}
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="flex justify-center mb-6">
-                <div className="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center">
-                  <div className="text-2xl font-bold text-gray-400">OSC</div>
+                <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
+                  <img 
+                    src="/lovable-uploads/eb6f1d02-9007-4e03-8786-deee07795994.png" 
+                    alt="Open Source Collective" 
+                    className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  />
+                  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/lovable-uploads/af4e1e5f-f5b6-4e1a-a33c-7971d856bf40.png')`, opacity: '0.3' }}></div>
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Open Source Collective</h3>

@@ -1,6 +1,4 @@
 
-import { ArrowRight } from "lucide-react";
-
 const Hero = () => {
   return (
     <section className="relative bg-gradient-to-b from-purple-50 to-white pt-20 pb-12 md:pt-32 md:pb-20 overflow-hidden">

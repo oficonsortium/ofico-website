@@ -28,8 +28,8 @@ const Hero = () => {
               <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-ofi-300 rounded-full opacity-40"></div>
               <div className="relative bg-white rounded-xl shadow-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" 
-                  alt="Team collaboration" 
+                  src="https://opencollective-production.s3.us-west-1.amazonaws.com/update/2ebc1929-0e8c-4ae9-8895-e5932afd5dae/oc-headshot-38.jpg" 
+                  alt="OFi Consortium" 
                   className="w-full aspect-video object-cover"
                 />
               </div>

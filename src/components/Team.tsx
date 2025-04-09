@@ -1,0 +1,99 @@
+
+import { Linkedin } from "lucide-react";
+
+const Team = () => {
+  const teamMembers = [
+    {
+      name: "Sarah Johnson",
+      role: "Executive Director",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      linkedIn: "#"
+    },
+    {
+      name: "Michael Chen",
+      role: "Technology Lead",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      linkedIn: "#"
+    },
+    {
+      name: "Aisha Patel",
+      role: "Policy Director",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      linkedIn: "#"
+    },
+    {
+      name: "David Rodriguez",
+      role: "Research Lead",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      linkedIn: "#"
+    }
+  ];
+  
+  return (
+    <section id="team" className="section-padding bg-white">
+      <div className="container mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
+          <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>
+          <p className="text-gray-600">
+            Meet the dedicated professionals guiding our consortium's mission and strategic initiatives.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {teamMembers.map((member, index) => (
+            <div 
+              key={index} 
+              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src={member.image} 
+                  alt={member.name} 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
+                <p className="text-ofi-600 mb-3">{member.role}</p>
+                <a 
+                  href={member.linkedIn}
+                  className="inline-flex items-center text-gray-500 hover:text-ofi-600 transition-colors"
+                >
+                  <Linkedin className="h-5 w-5 mr-1" />
+                  <span className="text-sm">LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="mt-16 bg-gray-50 rounded-xl p-8">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Join Our Consortium</h3>
+            <p className="text-gray-600">
+              We're always looking for partners and members who share our vision for open finance.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div className="p-4">
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Financial Institutions</h4>
+              <p className="text-gray-600">Banks, credit unions, and financial service providers.</p>
+            </div>
+            <div className="p-4">
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Technology Providers</h4>
+              <p className="text-gray-600">Fintech companies, software developers, and system integrators.</p>
+            </div>
+            <div className="p-4">
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Industry Experts</h4>
+              <p className="text-gray-600">Consultants, academics, and thought leaders in finance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Team;

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
@@ -138,20 +138,6 @@ const Contact = () => {
                     <p className="text-gray-600 mt-1">
                       <a href="mailto:info@oficonsortium.org" className="hover:text-ofi-600">
                         info@oficonsortium.org
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex">
-                  <div className="flex-shrink-0 mt-1">
-                    <Phone className="h-6 w-6 text-ofi-600" />
-                  </div>
-                  <div className="ml-4">
-                    <h4 className="text-lg font-medium text-gray-900">Phone</h4>
-                    <p className="text-gray-600 mt-1">
-                      <a href="tel:+12125551234" className="hover:text-ofi-600">
-                        +1 (212) 555-1234
                       </a>
                     </p>
                   </div>

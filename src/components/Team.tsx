@@ -1,3 +1,4 @@
+
 import { Linkedin } from "lucide-react";
 
 const Team = () => {
@@ -5,7 +6,7 @@ const Team = () => {
     {
       name: "Pia Mancini",
       role: "President",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      image: "/lovable-uploads/55a6f0c6-ea75-48a2-a5d9-c1bd5a077f30.png",
       linkedIn: "#"
     },
     {

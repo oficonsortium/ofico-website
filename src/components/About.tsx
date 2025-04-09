@@ -10,7 +10,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About OFi Consortium</h2>
           <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>
           <p className="text-gray-600">
-            We're a non-profit organization bringing together industry leaders, innovators, and policy makers to advance open finance initiatives and create a more inclusive financial ecosystem.
+            We are a nonprofit alliance of fiscal hosts and public-interest organizations. Together, we maintain and govern the "classic" Open Collective Platform to support transparent, participatory finance for the commons.
           </p>
         </div>
         

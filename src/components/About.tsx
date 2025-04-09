@@ -1,4 +1,3 @@
-
 import { Target, Users, Award } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -15,6 +14,7 @@ const About = () => {
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
+          {/* Open Source Collective */}
           <Card className="border-t-4 border-t-ofi-400 transform transition-all hover:-translate-y-1 hover:shadow-md">
             <CardHeader className="pb-2">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-ofi-100 text-ofi-600 mb-4">
@@ -29,20 +29,25 @@ const About = () => {
             </CardContent>
           </Card>
           
-          <Card className="border-t-4 border-t-ofi-500 transform transition-all hover:-translate-y-1 hover:shadow-md">
-            <CardHeader className="pb-2">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-ofi-100 text-ofi-600 mb-4">
-                <Users className="h-6 w-6" />
+          {/* Open Collective Europe */}
+          <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="flex justify-center mb-6">
+              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
+                <img 
+                  src="/lovable-uploads/148e2dea-b1bc-423c-b072-42d46f883b10.png" 
+                  alt="Open Collective Europe" 
+                  className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/lovable-uploads/b9d2464e-7d80-4c18-9752-06de4bdcc6a3.png')`, opacity: '0.3' }}></div>
               </div>
-              <CardTitle>Our Community</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription>
-                We are collectives, co-ops, nonprofits, open source projects, mutual aid groups, fiscal hosts, developers, and allies working to make financial systems more fair, accessible, and accountable. Together, we're shaping the future of open finance—bottom-up, not top-down.
-              </CardDescription>
-            </CardContent>
-          </Card>
+            </div>
+            <h3 className="text-xl font-semibold text-center mb-2">Open Collective Europe</h3>
+            <p className="text-gray-600 text-center">
+              Providing fiscal sponsorship and financial services to European communities and projects.
+            </p>
+          </div>
           
+          {/* Gift Collective */}
           <Card className="border-t-4 border-t-ofi-600 transform transition-all hover:-translate-y-1 hover:shadow-md">
             <CardHeader className="pb-2">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-ofi-100 text-ofi-600 mb-4">
@@ -96,7 +101,7 @@ const About = () => {
                     alt="Open Collective Europe" 
                     className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                   />
-                  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/lovable-uploads/9c814f64-7c82-409e-aa94-b52d71d6bc0d.png')`, opacity: '0.3' }}></div>
+                  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/lovable-uploads/b9d2464e-7d80-4c18-9752-06de4bdcc6a3.png')`, opacity: '0.3' }}></div>
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Open Collective Europe</h3>

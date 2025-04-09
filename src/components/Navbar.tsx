@@ -40,7 +40,7 @@ const Navbar = () => {
             <a href="#about" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
               About
             </a>
-            <a href="#members" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
+            <a href="#members-section" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
               Members
             </a>
             <a href="#team" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
@@ -78,7 +78,7 @@ const Navbar = () => {
               About
             </a>
             <a
-              href="#members"
+              href="#members-section"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600"
               onClick={() => setIsOpen(false)}
             >

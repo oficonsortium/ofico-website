@@ -96,7 +96,7 @@ const About = () => {
         </div>
         
         {/* Our Members Section */}
-        <div className="mt-20">
+        <div id="members-section" className="mt-20">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Members</h2>
             <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>

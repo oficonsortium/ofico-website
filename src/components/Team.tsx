@@ -4,25 +4,19 @@ import { Linkedin } from "lucide-react";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Sarah Johnson",
+      name: "Pia Mancini",
       role: "Executive Director",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
       linkedIn: "#"
     },
     {
-      name: "Michael Chen",
+      name: "François Hodierne",
       role: "Technology Lead",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
       linkedIn: "#"
     },
     {
-      name: "Aisha Patel",
-      role: "Policy Director",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-      linkedIn: "#"
-    },
-    {
-      name: "David Rodriguez",
+      name: "Ben Nickolls",
       role: "Research Lead",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
       linkedIn: "#"
@@ -40,7 +34,7 @@ const Team = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <div 
               key={index} 

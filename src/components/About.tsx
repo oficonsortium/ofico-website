@@ -58,43 +58,6 @@ const About = () => {
           </Card>
         </div>
         
-        <div className="mt-20">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Our Approach</h3>
-              <p className="text-gray-600 mb-4">
-                At OFi Consortium, we take a holistic approach to advancing open finance initiatives through:
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <div className="mr-3 mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-ofi-500"></div>
-                  <p className="text-gray-600"><span className="font-medium">Research & Development</span> - Exploring emerging technologies and standards</p>
-                </li>
-                <li className="flex items-start">
-                  <div className="mr-3 mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-ofi-500"></div>
-                  <p className="text-gray-600"><span className="font-medium">Education & Advocacy</span> - Promoting open finance literacy and benefits</p>
-                </li>
-                <li className="flex items-start">
-                  <div className="mr-3 mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-ofi-500"></div>
-                  <p className="text-gray-600"><span className="font-medium">Collaboration</span> - Facilitating partnerships across the industry</p>
-                </li>
-                <li className="flex items-start">
-                  <div className="mr-3 mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-ofi-500"></div>
-                  <p className="text-gray-600"><span className="font-medium">Policy Development</span> - Working with regulators on enabling frameworks</p>
-                </li>
-              </ul>
-            </div>
-            <div className="relative">
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-ofi-100 rounded-full opacity-70"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1583321500900-82807e458a3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" 
-                alt="Team meeting" 
-                className="relative rounded-lg shadow-lg object-cover w-full h-80"
-              />
-            </div>
-          </div>
-        </div>
-        
         {/* Our Members Section */}
         <div id="members-section" className="mt-20">
           <div className="text-center max-w-2xl mx-auto mb-12">

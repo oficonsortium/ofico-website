@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -14,12 +13,6 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
               OFi Consortium coordinates the governance and evolution of open financial tools, ensuring they stay transparent, community-owned, and designed for long-term resilience.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white" size="lg">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
           </div>
           
           <div className="w-full md:w-1/2 flex justify-center animate-fade-in">

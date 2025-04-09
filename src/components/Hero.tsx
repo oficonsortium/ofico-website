@@ -19,9 +19,6 @@ const Hero = () => {
                 Learn More
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="lg" className="border-ofi-500 text-ofi-700 hover:bg-ofi-50">
-                Join Our Mission
-              </Button>
             </div>
           </div>
           

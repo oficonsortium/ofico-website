@@ -46,14 +46,6 @@ const Navbar = () => {
             </a>
           </nav>
 
-          <Button 
-            variant="outline"
-            size="sm"
-            className="hidden md:flex border-ofi-500 text-ofi-700 hover:bg-ofi-50"
-          >
-            Join Us
-          </Button>
-
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -101,15 +93,6 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <div className="pt-2">
-              <Button 
-                variant="outline"
-                size="sm"
-                className="w-full border-ofi-500 text-ofi-700 hover:bg-ofi-50"
-              >
-                Join Us
-              </Button>
-            </div>
           </div>
         </div>
       )}

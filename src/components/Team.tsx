@@ -18,7 +18,7 @@ const Team = () => {
     {
       name: "Ben Nickolls",
       role: "Treasurer",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+      image: "/lovable-uploads/08cd6c8a-6af0-4eae-9992-ff08b0974151.png",
       linkedIn: "#"
     }
   ];

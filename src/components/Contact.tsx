@@ -119,9 +119,9 @@ const Contact = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-gray-900">Address</h4>
                     <p className="text-gray-600 mt-1">
-                      123 Innovation Drive<br />
-                      Financial District<br />
-                      New York, NY 10001
+                      440 N Barranca Ave #3489<br />
+                      Covina, CA 91723<br />
+                      US
                     </p>
                   </div>
                 </div>

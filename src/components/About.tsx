@@ -90,8 +90,13 @@ const About = () => {
             {/* Open Collective Europe */}
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="flex justify-center mb-6">
-                <div className="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center">
-                  <div className="text-2xl font-bold text-gray-400">OCE</div>
+                <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
+                  <img 
+                    src="/lovable-uploads/148e2dea-b1bc-423c-b072-42d46f883b10.png" 
+                    alt="Open Collective Europe" 
+                    className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  />
+                  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/lovable-uploads/9c814f64-7c82-409e-aa94-b52d71d6bc0d.png')`, opacity: '0.3' }}></div>
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Open Collective Europe</h3>

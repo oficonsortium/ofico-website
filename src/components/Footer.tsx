@@ -1,3 +1,4 @@
+
 import { Linkedin } from "lucide-react";
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto py-12 px-4 md:px-6">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2">
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Open Finance Consortium Inc</h3>
             <p className="mb-4 text-gray-400 text-sm">
@@ -23,68 +24,6 @@ const Footer = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
             </div>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#about" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#programs" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Our Programs
-                </a>
-              </li>
-              <li>
-                <a href="#team" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Leadership
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Join Us
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Research Papers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Standards Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Case Studies
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Blog Articles
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Events
-                </a>
-              </li>
-            </ul>
           </div>
 
           <div>

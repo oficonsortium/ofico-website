@@ -1,4 +1,3 @@
-
 import { Linkedin } from "lucide-react";
 
 const Team = () => {
@@ -12,7 +11,7 @@ const Team = () => {
     {
       name: "François Hodierne",
       role: "Executive Director",
-      image: "https://media.licdn.com/dms/image/C4D03AQFn4Na7rr8Lvg/profile-displayphoto-shrink_800_800/0/1630444859246?e=1717027200&v=beta&t=GPJQtwQasDBnwZSFQlEhO_EyI_s249qR5MyQO2wx4I4",
+      image: "/images/francois-hodierne.jpg",
       linkedIn: "https://www.linkedin.com/in/francoishodierne/"
     },
     {

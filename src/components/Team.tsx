@@ -12,7 +12,7 @@ const Team = () => {
     {
       name: "François Hodierne",
       role: "Executive Director",
-      image: "/images/francois-hodierne.jpg",
+      image: "/lovable-uploads/8bce804d-840d-43c8-b33b-9380933cc196.png",
       linkedIn: "https://www.linkedin.com/in/francoishodierne/"
     },
     {

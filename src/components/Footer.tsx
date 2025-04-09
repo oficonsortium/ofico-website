@@ -1,4 +1,3 @@
-
 import { Facebook, Twitter, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto py-12 px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">OFi Consortium</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Open Finance Consortium Inc</h3>
             <p className="mb-4 text-gray-400 text-sm">
               Advancing open finance solutions through collaboration, innovation, and education.
             </p>
@@ -124,11 +123,11 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} OFi Consortium. All rights reserved.
+            © {currentYear} Open Finance Consortium Inc. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
-              Non-Profit 501(c)(3) Organization
+              Non-Profit 501(c)(6) Organization
             </a>
           </div>
         </div>

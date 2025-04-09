@@ -24,7 +24,7 @@ const About = () => {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                To democratize financial services through open standards, innovative technology, and collaborative engagement across the industry.
+                To build trustworthy financial infrastructure that belongs to everyone. We support open systems, shared ownership, and practical tools that help communities manage money together—without gatekeepers.
               </CardDescription>
             </CardContent>
           </Card>
@@ -38,7 +38,7 @@ const About = () => {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                A diverse network of financial institutions, technology providers, regulators, and consumer advocates united to promote open finance principles.
+                We are collectives, co-ops, nonprofits, open source projects, mutual aid groups, fiscal hosts, developers, and allies working to make financial systems more fair, accessible, and accountable. Together, we're shaping the future of open finance—bottom-up, not top-down.
               </CardDescription>
             </CardContent>
           </Card>
@@ -52,7 +52,7 @@ const About = () => {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                We believe in transparency, inclusivity, innovation, and collaboration as the foundation for building a more open financial ecosystem.
+                We practice transparency not just as a principle, but as a tool for trust. We value inclusion in action, not just intention. We prioritize collaboration over competition, and we innovate to serve people—not markets.
               </CardDescription>
             </CardContent>
           </Card>

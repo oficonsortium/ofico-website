@@ -27,10 +27,10 @@ const Team = () => {
     <section id="team" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Directors</h2>
           <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>
           <p className="text-gray-600">
-            Meet the dedicated professionals guiding our consortium's mission and strategic initiatives.
+            The board members responsible for governing and overseeing our organization.
           </p>
         </div>
         

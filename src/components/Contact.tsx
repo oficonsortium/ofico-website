@@ -98,12 +98,15 @@ const Contact = () => {
               </div>
 
               <Button
-                type="submit"
-                className="w-full bg-ofi-600 hover:bg-ofi-700 text-white"
-                disabled={isSubmitting}
+                type="button"
+                className="w-full bg-gray-400 hover:bg-gray-500 text-white cursor-not-allowed"
+                disabled={true}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                Contact Form Not Available
               </Button>
+              <p className="text-xs text-gray-500 text-center mt-2">
+                This form is currently not connected to an email system. Please use the contact information on the right.
+              </p>
             </form>
           </div>
 
@@ -153,22 +156,6 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-ofi-600 rounded-lg shadow-sm p-6 md:p-8 text-white">
-              <h3 className="text-xl font-semibold mb-4">Join Our Newsletter</h3>
-              <p className="mb-4 text-ofi-100">
-                Stay updated with the latest in open finance trends and consortium activities.
-              </p>
-              <div className="flex space-x-2">
-                <Input
-                  placeholder="Your email address"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
-                />
-                <Button className="bg-white text-ofi-700 hover:bg-ofi-100">
-                  Subscribe
-                </Button>
               </div>
             </div>
           </div>

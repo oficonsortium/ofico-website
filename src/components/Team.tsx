@@ -12,8 +12,8 @@ const Team = () => {
     {
       name: "François Hodierne",
       role: "Executive Director",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-      linkedIn: "#"
+      image: "https://media.licdn.com/dms/image/C4D03AQFn4Na7rr8Lvg/profile-displayphoto-shrink_800_800/0/1630444859246?e=1717027200&v=beta&t=GPJQtwQasDBnwZSFQlEhO_EyI_s249qR5MyQO2wx4I4",
+      linkedIn: "https://www.linkedin.com/in/francoishodierne/"
     },
     {
       name: "Ben Nickolls",

@@ -1,5 +1,5 @@
 
-import { Target, Users, Award } from "lucide-react";
+import { Target, Users, Award, Monitor } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
@@ -59,6 +59,43 @@ const About = () => {
               </CardDescription>
             </CardContent>
           </Card>
+        </div>
+        
+        {/* Highlight Section - Platform Stewardship */}
+        <div className="mt-20 mb-20 bg-gradient-to-r from-ofi-50 to-white rounded-xl overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="p-8 flex flex-col justify-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">We're the steward of the classic Open Collective platform</h2>
+              <div className="h-1 w-16 bg-ofi-500 mb-6"></div>
+              <p className="text-gray-600 mb-4">
+                As stewards of the Open Collective platform, we maintain and develop the infrastructure that thousands of communities rely on for transparent financial collaboration. This includes:
+              </p>
+              <ul className="space-y-2 text-gray-600 mb-6">
+                <li className="flex items-start">
+                  <span className="text-ofi-600 mr-2">•</span>
+                  <span>Managing the open source codebase and infrastructure</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-ofi-600 mr-2">•</span>
+                  <span>Ensuring platform stability, security, and accessibility</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-ofi-600 mr-2">•</span>
+                  <span>Supporting integrations with fiscal hosts worldwide</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-ofi-600 mr-2">•</span>
+                  <span>Prioritizing community needs through democratic governance</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-gray-100 flex items-center justify-center p-6">
+              <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden border border-gray-200 flex items-center justify-center bg-white">
+                <Monitor className="h-12 w-12 text-gray-300" />
+                <p className="absolute bottom-4 text-sm text-gray-400">Platform screenshot</p>
+              </div>
+            </div>
+          </div>
         </div>
         
         {/* Our Members Section */}

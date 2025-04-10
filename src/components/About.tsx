@@ -90,9 +90,12 @@ const About = () => {
               </ul>
             </div>
             <div className="bg-gray-100 flex items-center justify-center p-6">
-              <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden border border-gray-200 flex items-center justify-center bg-white">
-                <Monitor className="h-12 w-12 text-gray-300" />
-                <p className="absolute bottom-4 text-sm text-gray-400">Platform screenshot</p>
+              <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden border border-gray-200">
+                <img 
+                  src="/lovable-uploads/33319893-eb6e-48e5-8f6d-714d66639777.png" 
+                  alt="Open Collective Platform Screenshot" 
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>

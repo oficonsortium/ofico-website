@@ -3,8 +3,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -20,19 +21,42 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Replace these with your actual EmailJS service ID, template ID, and user ID
+      const templateParams = {
+        to_email: 'info@oficonsortium.org',
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        reply_to: formData.email
+      };
+      
+      await emailjs.send(
+        'default_service', // Service ID from EmailJS
+        'template_default', // Template ID from EmailJS
+        templateParams,
+        'YOUR_USER_ID' // User ID from EmailJS
+      );
+      
       toast({
         title: "Message sent!",
         description: "Thank you for contacting us. We'll respond shortly.",
       });
       setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -98,15 +122,18 @@ const Contact = () => {
               </div>
 
               <Button
-                type="button"
-                className="w-full bg-gray-400 hover:bg-gray-500 text-white cursor-not-allowed"
-                disabled={true}
+                type="submit"
+                className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                disabled={isSubmitting}
               >
-                Contact Form Not Available
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Sending...
+                  </>
+                ) : (
+                  'Send Message'
+                )}
               </Button>
-              <p className="text-xs text-gray-500 text-center mt-2">
-                This form is currently not connected to an email system. Please use the contact information on the right.
-              </p>
             </form>
           </div>
 

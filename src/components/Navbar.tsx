@@ -28,9 +28,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="flex items-center">
             <img 
-              src="/lovable-uploads/58d9bd62-3052-413e-b457-9f7fd52abbab.png" 
+              src="/lovable-uploads/fb0a7677-b4f3-4b6a-b2fc-fda7e055b590.png" 
               alt="OFi Consortium Logo" 
-              className="h-8 w-8 mr-2" 
+              className="h-10 w-10 mr-2" 
             />
             <span className="text-lg md:text-xl font-bold text-navy-700">OFi Consortium</span>
           </a>

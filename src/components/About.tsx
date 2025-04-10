@@ -1,4 +1,3 @@
-
 import { Target, Users, Award, Monitor } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -13,6 +12,7 @@ const About = () => {
             We are a nonprofit alliance of fiscal hosts and public-interest organizations. Together, we maintain and govern the "classic" Open Collective Platform to support transparent, participatory finance for the commons.
           </p>
         </div>
+        
         
         <div className="grid md:grid-cols-3 gap-8">
           {/* Our Mission */}
@@ -62,7 +62,7 @@ const About = () => {
         </div>
         
         {/* Highlight Section - Platform Stewardship */}
-        <div className="mt-20 mb-20 bg-gradient-to-r from-ofi-50 to-white rounded-xl overflow-hidden">
+        <div id="platform" className="mt-20 mb-20 bg-gradient-to-r from-ofi-50 to-white rounded-xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="p-8 flex flex-col justify-center">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">We're the steward of the classic Open Collective platform</h2>

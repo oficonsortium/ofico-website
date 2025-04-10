@@ -40,6 +40,9 @@ const Navbar = () => {
             <a href="#about" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
               About
             </a>
+            <a href="#platform" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
+              Platform
+            </a>
             <a href="#members-section" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
               Members
             </a>
@@ -76,6 +79,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               About
+            </a>
+            <a
+              href="#platform"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600"
+              onClick={() => setIsOpen(false)}
+            >
+              Platform
             </a>
             <a
               href="#members-section"

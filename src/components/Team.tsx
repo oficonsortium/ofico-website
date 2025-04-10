@@ -58,17 +58,9 @@ const Team = () => {
             <p className="text-gray-600 mb-6">
               We're always looking for partners and members who share our vision for open finance.
             </p>
-            <Button 
-              className="bg-ofi-600 hover:bg-ofi-700 text-white"
-              onClick={() => {
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              Contact Us
-            </Button>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 text-center">
+          <div className="grid md:grid-cols-2 gap-6 text-center mb-8">
             <div className="p-4">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">General Members</h4>
               <p className="text-gray-600">Mission-aligned organizations with voting rights and governance roles.</p>
@@ -77,6 +69,17 @@ const Team = () => {
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Corporate Sponsors</h4>
               <p className="text-gray-600">Support financially without direct decision-making power.</p>
             </div>
+          </div>
+          
+          <div className="text-center">
+            <Button 
+              className="bg-ofi-600 hover:bg-ofi-700 text-white"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contact Us
+            </Button>
           </div>
         </div>
       </div>

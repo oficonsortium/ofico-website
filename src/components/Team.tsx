@@ -1,6 +1,7 @@
 
 import { Linkedin } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 
 const Team = () => {
   const teamMembers = [{
@@ -54,9 +55,17 @@ const Team = () => {
         <div className="mt-16 bg-gray-50 rounded-xl p-8">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Join Our Consortium</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-6">
               We're always looking for partners and members who share our vision for open finance.
             </p>
+            <Button 
+              className="bg-ofi-600 hover:bg-ofi-700 text-white"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contact Us
+            </Button>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6 text-center">

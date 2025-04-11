@@ -21,9 +21,7 @@ const About = () => {
               <CardTitle>Our Mission</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>
-                To build trustworthy financial infrastructure that belongs to everyone. We support open systems, shared ownership, and practical tools that help communities manage money together—without gatekeepers.
-              </CardDescription>
+              <CardDescription>To support and advance trustworthy transparent financial infrastructure. We support open systems, participatory governance, and practical tools that help communities manage money together.</CardDescription>
             </CardContent>
           </Card>
           
@@ -36,9 +34,7 @@ const About = () => {
               <CardTitle>Our Community</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>
-                The OFi Consortium brings together a diverse group of organizations, projects, and individuals committed to financial transparency and democratic governance in the digital age.
-              </CardDescription>
+              <CardDescription>The OFi Consortium brings together diverse organizations, projects, and individuals committed to financial transparency and democratic governance in the digital age.</CardDescription>
             </CardContent>
           </Card>
           

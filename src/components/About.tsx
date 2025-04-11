@@ -1,4 +1,5 @@
-import { Target, Users, Award, Monitor } from "lucide-react";
+
+import { Target, Users, Award, Monitor, Globe, ExternalLink, Linkedin } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 const About = () => {
   return <section id="about" className="section-padding bg-white">
@@ -6,7 +7,7 @@ const About = () => {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About OFi Consortium</h2>
           <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>
-          <p className="text-gray-600">We are a nonprofit 501(c)(6) community-governed membership organization alliance Fiscal Hosts and public-interest organizations. Together, we maintain and govern the “classic” Open Collective Platform to support transparent, participatory finance for the commons.
+          <p className="text-gray-600">We are a nonprofit 501(c)(6) community-governed membership organization alliance Fiscal Hosts and public-interest organizations. Together, we maintain and govern the "classic" Open Collective Platform to support transparent, participatory finance for the commons.
         </p>
         </div>
         
@@ -111,9 +112,39 @@ const About = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Open Source Collective</h3>
-              <p className="text-gray-600 text-center">
+              <p className="text-gray-600 text-center mb-4">
                 Supporting open source projects through fiscal hosting and financial tools.
               </p>
+              {/* Social Icons */}
+              <div className="flex justify-center space-x-3 mt-2">
+                <a 
+                  href="https://oscollective.org" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="Website"
+                >
+                  <Globe className="h-4 w-4" />
+                </a>
+                <a 
+                  href="https://opencollective.com/opensource" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="Open Collective"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/open-source-collective" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
+              </div>
             </div>
             
             {/* Open Collective Europe */}
@@ -128,9 +159,39 @@ const About = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Open Collective Europe</h3>
-              <p className="text-gray-600 text-center">
+              <p className="text-gray-600 text-center mb-4">
                 Providing fiscal sponsorship and financial services to European communities and projects.
               </p>
+              {/* Social Icons */}
+              <div className="flex justify-center space-x-3 mt-2">
+                <a 
+                  href="https://opencollective.com/europe" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="Website"
+                >
+                  <Globe className="h-4 w-4" />
+                </a>
+                <a 
+                  href="https://opencollective.com/europe" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="Open Collective"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/open-collective-europe" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
+              </div>
             </div>
             
             {/* Gift Collective */}
@@ -141,9 +202,39 @@ const About = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Gift Collective</h3>
-              <p className="text-gray-600 text-center">
+              <p className="text-gray-600 text-center mb-4">
                 Facilitating reciprocity and resource sharing within gift economy communities.
               </p>
+              {/* Social Icons */}
+              <div className="flex justify-center space-x-3 mt-2">
+                <a 
+                  href="https://gift-collective.org" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="Website"
+                >
+                  <Globe className="h-4 w-4" />
+                </a>
+                <a 
+                  href="https://opencollective.com/gift-collective" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="Open Collective"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/gift-collective" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

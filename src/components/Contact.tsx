@@ -27,7 +27,7 @@ const Contact = () => {
                   <p className="text-gray-600 mt-1">
                     440 N Barranca Ave #3489<br />
                     Covina, CA 91723<br />
-                    US
+                    USA
                   </p>
                 </div>
               </div>

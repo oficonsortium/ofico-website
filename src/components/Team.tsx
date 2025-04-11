@@ -1,5 +1,5 @@
 
-import { Linkedin } from "lucide-react";
+import { Linkedin, Globe, ExternalLink } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
@@ -9,18 +9,24 @@ const Team = () => {
     role: "President",
     image: "/lovable-uploads/55a6f0c6-ea75-48a2-a5d9-c1bd5a077f30.png",
     linkedIn: "https://www.linkedin.com/in/piamancini/",
+    website: "https://piamancini.com",
+    openCollective: "https://opencollective.com/pia",
     initials: "PM"
   }, {
     name: "François Hodierne",
     role: "Executive Director",
     image: "/lovable-uploads/8bce804d-840d-43c8-b33b-9380933cc196.png",
     linkedIn: "https://www.linkedin.com/in/francoishodierne/",
+    website: "https://francois.hodierne.net",
+    openCollective: "https://opencollective.com/francois",
     initials: "FH"
   }, {
     name: "Benjamin Nickolls",
     role: "Treasurer",
     image: "/lovable-uploads/08cd6c8a-6af0-4eae-9992-ff08b0974151.png",
     linkedIn: "https://www.linkedin.com/in/benjamuk/",
+    website: "https://benjam.in",
+    openCollective: "https://opencollective.com/ben",
     initials: "BN"
   }];
   
@@ -43,11 +49,38 @@ const Team = () => {
                 <AvatarFallback>{member.initials}</AvatarFallback>
               </Avatar>
               <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-              <p className="text-ofi-600 mb-3">{member.role}</p>
-              <a href={member.linkedIn} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-500 hover:text-ofi-600 transition-colors">
-                <Linkedin className="h-5 w-5 mr-1" />
-                <span className="text-sm">LinkedIn</span>
-              </a>
+              <p className="text-ofi-600 mb-4">{member.role}</p>
+              
+              {/* Social Icons */}
+              <div className="flex space-x-3 mt-2">
+                <a 
+                  href={member.website} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="Website"
+                >
+                  <Globe className="h-4 w-4" />
+                </a>
+                <a 
+                  href={member.openCollective} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="Open Collective"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+                <a 
+                  href={member.linkedIn} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
+              </div>
             </div>
           ))}
         </div>

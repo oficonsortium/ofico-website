@@ -6,10 +6,10 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 mb-10 md:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
-              Rewiring Finance for the <span className="text-purple-600">Public Good</span>
+              Technology for <span className="text-purple-600">Collaborative Transparent Finances</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
-              OFi Consortium coordinates the governance and evolution of open financial tools, ensuring they stay transparent, community-owned, and designed for long-term resilience.
+              OFi Consortium coordinates the governance and evolution of open financial tools, ensuring they stay transparent, community-owned, and designed for the long-term resilience of our communities.
             </p>
           </div>
           

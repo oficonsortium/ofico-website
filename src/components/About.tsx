@@ -113,7 +113,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Open Source Collective</h3>
               <p className="text-gray-600 text-center mb-4">
-                Supporting open source projects through fiscal hosting and financial tools.
+                Non-profit fiscal host promoting a healthy and sustainable open source ecosystem.
               </p>
               {/* Social Icons */}
               <div className="flex justify-center space-x-3 mt-2">
@@ -136,7 +136,7 @@ const About = () => {
                   <ExternalLink className="h-4 w-4" />
                 </a>
                 <a 
-                  href="https://www.linkedin.com/company/open-source-collective" 
+                  href="https://www.linkedin.com/company/opensourcecollective/"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
@@ -160,12 +160,12 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Open Collective Europe</h3>
               <p className="text-gray-600 text-center mb-4">
-                Providing fiscal sponsorship and financial services to European communities and projects.
+                European Non-profit - Providing fiscal sponsorship to communities and projects from garden collectives to global democracy initiatives.
               </p>
               {/* Social Icons */}
               <div className="flex justify-center space-x-3 mt-2">
                 <a 
-                  href="https://opencollective.com/europe" 
+                  href="https://www.oceurope.org/"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
@@ -183,7 +183,7 @@ const About = () => {
                   <ExternalLink className="h-4 w-4" />
                 </a>
                 <a 
-                  href="https://www.linkedin.com/company/open-collective-europe" 
+                  href="https://www.linkedin.com/company/open-collective-europe/"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
@@ -203,12 +203,12 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Gift Collective</h3>
               <p className="text-gray-600 text-center mb-4">
-                Facilitating reciprocity and resource sharing within gift economy communities.
+                New Zealand Charity - Supporting projects with a charitable mission in Aotearoa, transforming how charity funding works through fundholding.
               </p>
               {/* Social Icons */}
               <div className="flex justify-center space-x-3 mt-2">
                 <a 
-                  href="https://gift-collective.org" 
+                  href="https://giftcollective.nz/"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
@@ -217,7 +217,7 @@ const About = () => {
                   <Globe className="h-4 w-4" />
                 </a>
                 <a 
-                  href="https://opencollective.com/gift-collective" 
+                  href="https://opencollective.com/giftcollective"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
@@ -226,7 +226,7 @@ const About = () => {
                   <ExternalLink className="h-4 w-4" />
                 </a>
                 <a 
-                  href="https://www.linkedin.com/company/gift-collective" 
+                  href="https://www.linkedin.com/company/giftcollectivenz/"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-500 hover:text-ofi-600 transition-colors p-2"

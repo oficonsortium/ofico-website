@@ -1,3 +1,4 @@
+
 import { Target, Users, Award, Monitor } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -65,7 +66,7 @@ const About = () => {
         <div id="platform" className="mt-20 mb-20 bg-gradient-to-r from-ofi-50 to-white rounded-xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="p-8 flex flex-col justify-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">We're the steward of the classic Open Collective platform</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Stewards of the classic Open Collective platform</h2>
               <div className="h-1 w-16 bg-ofi-500 mb-6"></div>
               <p className="text-gray-600 mb-4">
                 As stewards of the Open Collective platform, we maintain and develop the infrastructure that thousands of communities rely on for transparent financial collaboration. This includes:

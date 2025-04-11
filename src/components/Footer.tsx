@@ -39,16 +39,6 @@ const Footer = () => {
                   Terms of Service
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Cookie Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Membership Agreement
-                </a>
-              </li>
             </ul>
           </div>
         </div>

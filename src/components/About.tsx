@@ -47,9 +47,7 @@ const About = () => {
               <CardTitle>Our Values</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>
-                We practice transparency not just as a principle, but as a tool for trust. We value inclusion in action, not just intention. We prioritize collaboration over competition, and we innovate to serve people—not markets.
-              </CardDescription>
+              <CardDescription>We practice transparency not just as a principle, but as a tool for trust. We value inclusion in action, not just intention. We prioritize collaboration over competition and innovate to serve people—not markets.</CardDescription>
             </CardContent>
           </Card>
         </div>

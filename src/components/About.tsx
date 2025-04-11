@@ -95,7 +95,7 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Members</h2>
             <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>
             <p className="text-gray-600">
-              The OFi Consortium is formed by these leading organizations committed to advancing open finance principles.
+              The OFi Consortium is formed by these leading organizations committed to advancing open finance principles. They represent thousands of Collectives and guide our strategic direction.
             </p>
           </div>
           

@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-xl font-semibold mb-4">6. Contact Us</h2>
             <p className="mb-4">
-              If you have questions about this privacy policy or our practices, please contact us at privacy@openfinanceconsortium.org.
+              If you have questions about this privacy policy or our practices, please contact us at privacy@oficonsortium.org.
             </p>
           </section>
 

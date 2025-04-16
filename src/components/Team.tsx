@@ -56,18 +56,18 @@ const Team = () => {
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Join Our Consortium</h3>
             <p className="text-gray-600 mb-6">
-              We're always looking for partners and members who share our vision for open finance.
+              We’re always looking for new members and supporting partners who share our vision.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6 text-center mb-8">
             <div className="p-4">
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">General Members</h4>
-              <p className="text-gray-600">Mission-aligned organizations with voting rights and governance roles.</p>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Community Members</h4>
+              <p className="text-gray-600">Organizations that directly use transparent financial ledgers and meet our transparency certification standards.</p>
             </div>
             <div className="p-4">
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">Corporate Sponsors</h4>
-              <p className="text-gray-600">Support financially without direct decision-making power.</p>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Supporting Members</h4>
+              <p className="text-gray-600">Organizations that do not use ledgers directly but show a clear interest in supporting transparent financial technologies and practices.</p>
             </div>
           </div>
           

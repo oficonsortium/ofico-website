@@ -9,11 +9,18 @@ const Bylaws = () => {
         <h1 className="text-3xl font-bold mb-8">Bylaws</h1>
         
         <div className="mb-8 flex justify-center">
-          <img
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
-            alt="Bylaws Document Preview"
-            className="w-full max-w-[595px] h-auto shadow-lg rounded-lg"
-          />
+          <a 
+            href="https://drive.google.com/file/d/1pda5K7CN-ZEWpnsDkmMG6n-V2qloJsXn/view?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <img
+              src="/lovable-uploads/1ec2e18e-dd6d-4a37-80c2-21674eec94fd.png"
+              alt="Bylaws Document Preview"
+              className="w-full max-w-[595px] h-auto shadow-lg rounded-lg hover:opacity-80 transition-opacity"
+            />
+          </a>
         </div>
 
         <div className="space-y-8 text-gray-700">
@@ -82,7 +89,7 @@ const Bylaws = () => {
             <ul className="list-disc pl-6 space-y-2">
               <li>Membership Dues: Members pay annual dues based on their tier, with Community Member fees varying by organizational size and Supporting Member fees set by the General Assembly</li>
               <li>Financial Oversight: The Treasurer oversees financial management, while the board ensures responsible budgeting, spending, and compliance with financial transparency standards</li>
-              <li>Indemnification & Liability Protection: Directors and officers are indemnified against legal claims related to their duties, and members are not personally liable for the organization’s debts</li>
+              <li>Indemnification & Liability Protection: Directors and officers are indemnified against legal claims related to their duties, and members are not personally liable for the organization's debts</li>
               <li>Conflict of Interest Policy: Directors and officers must disclose potential conflicts, and transactions involving them require board approval to ensure ethical governance</li>
               <li>Amendments & Compliance: Only the General Assembly can amend the bylaws, and the organization operates under Delaware law, ensuring legal compliance and governance stability</li>
             </ul>
@@ -94,3 +101,4 @@ const Bylaws = () => {
 };
 
 export default Bylaws;
+

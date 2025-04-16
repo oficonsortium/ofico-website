@@ -40,6 +40,11 @@ const Footer = () => {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link to="/bylaws" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Bylaws
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

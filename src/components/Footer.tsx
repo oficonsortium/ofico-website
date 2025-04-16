@@ -1,6 +1,5 @@
 import React from 'react';
-import { Linkedin } from "lucide-react";
-import { Discord } from '@styled-icons/fa-brands';
+import { Discord, Linkedin } from '@styled-icons/fa-brands';
 import { Link } from "react-router-dom";
 
 const Footer = () => {

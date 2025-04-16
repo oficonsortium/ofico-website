@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Linkedin, Discord } from "lucide-react";
+import { Linkedin, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -30,7 +31,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                <Discord className="h-5 w-5" />
+                <MessageSquare className="h-5 w-5" />
                 <span className="sr-only">Discord</span>
               </a>
             </div>

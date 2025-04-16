@@ -1,11 +1,12 @@
-
 import React from 'react';
 import { Link } from 'react-scroll';
+import Layout from '@/components/Layout';
 
 const Bylaws = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
+    <Layout>
+      <div className="min-h-screen bg-white">
+        <div className="container mx-auto px-4 py-16 max-w-4xl">
         <h1 className="text-3xl font-bold mb-8">Bylaws</h1>
         
         <div className="mb-8 flex justify-center">
@@ -96,7 +97,7 @@ const Bylaws = () => {
           </section>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

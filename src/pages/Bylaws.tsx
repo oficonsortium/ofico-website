@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import Layout from '@/components/Layout';
+import Layout from '../components/Layout';
 
 const Bylaws = () => {
   return (
     <Layout>
       <div className="min-h-screen bg-white">
         <div className="container mx-auto px-4 py-16 max-w-4xl">
-        <h1 className="text-3xl font-bold mb-8">Bylaws</h1>
-        
+          <h1 className="text-3xl font-bold mb-8">Bylaws</h1>
+          
         <div className="mb-8 flex justify-center">
           <a 
             href="https://drive.google.com/file/d/1pda5K7CN-ZEWpnsDkmMG6n-V2qloJsXn/view?usp=drive_link" 

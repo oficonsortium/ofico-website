@@ -18,11 +18,11 @@ const Bylaws = () => {
               className="inline-block"
             >
               <img
-                src="/lovable-uploads/1ec2e18e-dd6d-4a37-80c2-21674eec94fd.png"
+                src="/lovable-uploads/47c89f2a-8557-413d-9180-1c06dcf9309e.png"
                 alt="Bylaws Document Preview"
-                className="w-[595px] max-w-full h-auto shadow-lg rounded-lg hover:opacity-80 transition-opacity"
+                className="w-[595px] max-w-full h-[800px] shadow-lg rounded-lg hover:opacity-80 transition-opacity"
                 width="595"
-                height="auto"
+                height="800"
               />
             </a>
           </div>

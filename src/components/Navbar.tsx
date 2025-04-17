@@ -43,7 +43,7 @@ const Navbar = () => {
             <a href="/#platform" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
               Platform
             </a>
-            <a href="/#members-section" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
+            <a href="/#members" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
               Members
             </a>
             <a href="/#team" className="text-sm text-gray-700 hover:text-purple-600 font-medium">
@@ -74,35 +74,35 @@ const Navbar = () => {
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
-              href="#about"
+              href="/#about"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600"
               onClick={() => setIsOpen(false)}
             >
               About
             </a>
             <a
-              href="#platform"
+              href="/#platform"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600"
               onClick={() => setIsOpen(false)}
             >
               Platform
             </a>
             <a
-              href="#members-section"
+              href="/#members"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600"
               onClick={() => setIsOpen(false)}
             >
               Members
             </a>
             <a
-              href="#team"
+              href="/#team"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600"
               onClick={() => setIsOpen(false)}
             >
               Directors
             </a>
             <a
-              href="#contact"
+              href="/#contact"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600"
               onClick={() => setIsOpen(false)}
             >

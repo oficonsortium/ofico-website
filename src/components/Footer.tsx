@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Discord, Linkedin } from '@styled-icons/fa-brands';
+import { SiOpencollective } from '@icons-pack/react-simple-icons';
 import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -39,6 +40,15 @@ const Footer = () => {
               >
                 <Discord className="h-5 w-5" />
                 <span className="sr-only">Discord</span>
+              </a>
+              <a 
+                href="https://opencollective.com/ofico"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <SiOpencollective className="h-5 w-5" />
+                <span className="sr-only">Open Collective</span>
               </a>
             </div>
           </div>

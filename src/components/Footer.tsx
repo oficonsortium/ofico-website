@@ -1,13 +1,12 @@
-
 import React from 'react';
 import { Discord, Linkedin } from '@styled-icons/fa-brands';
 import { SiOpencollective } from '@icons-pack/react-simple-icons';
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const navigate = useNavigate();
-  
+
   const handleNavigation = (path: string) => {
     navigate(path);
     window.scrollTo(0, 0);
@@ -23,31 +22,31 @@ const Footer = () => {
               Advancing open finance solutions through collaboration, innovation, and education.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.linkedin.com/company/openfinanceconsortium/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/company/openfinanceconsortium/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a 
+              <a
                 href="https://discord.oficonsortium.org/"
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Discord className="h-5 w-5" />
                 <span className="sr-only">Discord</span>
               </a>
-              <a 
+              <a
                 href="https://opencollective.com/ofico"
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                <SiOpencollective className="h-5 w-5" />
+                <SiOpencollective className="h-5 w-5 mt-1" />
                 <span className="sr-only">Open Collective</span>
               </a>
             </div>
@@ -57,7 +56,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <button 
+                <button
                   onClick={() => handleNavigation('/privacy-policy')}
                   className="text-gray-400 hover:text-white transition-colors text-sm text-left"
                 >
@@ -85,9 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © {currentYear} Open Finance Consortium Inc. All rights reserved.
-          </p>
+          <p className="text-gray-400 text-sm">© {currentYear} Open Finance Consortium Inc. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
               Non-Profit 501(c)(6) Organization

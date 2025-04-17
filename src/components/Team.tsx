@@ -46,7 +46,6 @@ const Team = () => {
               <p className="text-ofi-600 mb-3">{member.role}</p>
               <a href={member.linkedIn} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-500 hover:text-ofi-600 transition-colors">
                 <Linkedin className="h-5 w-5 mr-1" />
-                <span className="text-sm">LinkedIn</span>
               </a>
             </div>
           ))}

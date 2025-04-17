@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-scroll';
 import Layout from '../components/Layout';
@@ -19,7 +20,9 @@ const Bylaws = () => {
               <img
                 src="/lovable-uploads/1ec2e18e-dd6d-4a37-80c2-21674eec94fd.png"
                 alt="Bylaws Document Preview"
-                className="w-full max-w-[595px] h-auto shadow-lg rounded-lg hover:opacity-80 transition-opacity"
+                className="w-[595px] max-w-full h-auto shadow-lg rounded-lg hover:opacity-80 transition-opacity"
+                width="595"
+                height="auto"
               />
             </a>
           </div>

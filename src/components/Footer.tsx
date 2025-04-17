@@ -25,7 +25,7 @@ const Footer = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
               <a 
-                href="https://discord.opencollective.com/" 
+                href="https://discord.oficonsortium.org/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"

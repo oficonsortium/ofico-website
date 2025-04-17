@@ -1,9 +1,16 @@
+
 import React from 'react';
 import { Discord, Linkedin } from '@styled-icons/fa-brands';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
+  
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -40,19 +47,28 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <button 
+                  onClick={() => handleNavigation('/privacy-policy')}
+                  className="text-gray-400 hover:text-white transition-colors text-sm text-left"
+                >
                   Privacy Policy
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <button
+                  onClick={() => handleNavigation('/terms-of-service')}
+                  className="text-gray-400 hover:text-white transition-colors text-sm text-left"
+                >
                   Terms of Service
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/bylaws" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <button
+                  onClick={() => handleNavigation('/bylaws')}
+                  className="text-gray-400 hover:text-white transition-colors text-sm text-left"
+                >
                   Bylaws
-                </Link>
+                </button>
               </li>
             </ul>
           </div>

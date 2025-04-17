@@ -1,8 +1,7 @@
-
 import { Linkedin } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { SiOpenCollective } from "@icons-pack/react-simple-icons";
+import { SiOpencollective } from "@icons-pack/react-simple-icons";
 
 const Team = () => {
   const teamMembers = [{
@@ -54,7 +53,7 @@ const Team = () => {
                   <span className="text-sm">LinkedIn</span>
                 </a>
                 <a href={member.openCollective} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-500 hover:text-ofi-600 transition-colors">
-                  <SiOpenCollective className="h-5 w-5 mr-1" />
+                  <SiOpencollective className="h-5 w-5 mr-1" />
                   <span className="text-sm">Open Collective</span>
                 </a>
               </div>

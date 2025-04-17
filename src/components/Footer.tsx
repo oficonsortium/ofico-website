@@ -9,7 +9,9 @@ const Footer = () => {
 
   const handleNavigation = (path: string) => {
     navigate(path);
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
   };
 
   return (

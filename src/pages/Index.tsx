@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Team from "@/components/Team";
+import Members from "@/components/Members";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -35,6 +36,10 @@ const Index = () => {
       
       <div className="fade-in-section">
         <About />
+      </div>
+      
+      <div className="fade-in-section">
+        <Members />
       </div>
       
       <div className="fade-in-section">

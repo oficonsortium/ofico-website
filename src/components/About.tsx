@@ -1,18 +1,20 @@
-
-import { Target, Users, Award, Monitor } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Target, Users, Award, Monitor } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const About = () => {
-  return <section id="about" className="section-padding bg-white">
+  return (
+    <section id="about" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About OFi Consortium</h2>
           <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>
-          <p className="text-gray-600">We are a nonprofit 501(c)(6) community-governed membership organization alliance Fiscal Hosts and public-interest organizations. Together, we maintain and govern the "classic" Open Collective Platform to support transparent, participatory finance for the commons.
-        </p>
+          <p className="text-gray-600">
+            We are a nonprofit 501(c)(6) community-governed membership organization alliance of Fiscal Hosts and
+            public-interest organizations. Together, we maintain and govern the "classic" Open Collective Platform to
+            support transparent, participatory finance for the commons.
+          </p>
         </div>
-        
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {/* Our Mission */}
           <Card className="border-t-4 border-t-ofi-400 transform transition-all hover:-translate-y-1 hover:shadow-md">
@@ -23,10 +25,13 @@ const About = () => {
               <CardTitle>Our Mission</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>To support and advance trustworthy transparent financial infrastructure. We support open systems, participatory governance, and practical tools that help communities manage money together.</CardDescription>
+              <CardDescription>
+                To support and advance trustworthy transparent financial infrastructure. We support open systems,
+                participatory governance, and practical tools that help communities manage money together.
+              </CardDescription>
             </CardContent>
           </Card>
-          
+
           {/* Our Community */}
           <Card className="border-t-4 border-t-ofi-500 transform transition-all hover:-translate-y-1 hover:shadow-md">
             <CardHeader className="pb-2">
@@ -36,10 +41,13 @@ const About = () => {
               <CardTitle>Our Community</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>The OFi Consortium brings together diverse organizations, projects, and individuals committed to financial transparency and democratic governance in the digital age.</CardDescription>
+              <CardDescription>
+                The OFi Consortium brings together diverse organizations, projects, and individuals committed to
+                financial transparency and democratic governance in the digital age.
+              </CardDescription>
             </CardContent>
           </Card>
-          
+
           {/* Our Values */}
           <Card className="border-t-4 border-t-ofi-600 transform transition-all hover:-translate-y-1 hover:shadow-md">
             <CardHeader className="pb-2">
@@ -49,19 +57,26 @@ const About = () => {
               <CardTitle>Our Values</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription>We practice transparency not just as a principle, but as a tool for trust. We value inclusion in action, not just intention. We prioritize collaboration over competition and innovate to serve people—not markets.</CardDescription>
+              <CardDescription>
+                We practice transparency not just as a principle, but as a tool for trust. We value inclusion in action,
+                not just intention. We prioritize collaboration over competition and innovate to serve people—not
+                markets.
+              </CardDescription>
             </CardContent>
           </Card>
         </div>
-        
+
         {/* Highlight Section - Platform Stewardship */}
         <div id="platform" className="mt-20 mb-20 bg-gradient-to-r from-ofi-50 to-white rounded-xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="p-8 flex flex-col justify-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Stewards of the classic Open Collective</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Stewards of the classic Open Collective
+              </h2>
               <div className="h-1 w-16 bg-ofi-500 mb-6"></div>
               <p className="text-gray-600 mb-4">
-                As stewards of the Open Collective platform, we maintain and develop the infrastructure that thousands of communities rely on for transparent financial collaboration. This includes:
+                As stewards of the Open Collective platform, we maintain and develop the infrastructure that thousands
+                of communities rely on for transparent financial collaboration. This includes:
               </p>
               <ul className="space-y-2 text-gray-600 mb-6">
                 <li className="flex items-start">
@@ -84,13 +99,18 @@ const About = () => {
             </div>
             <div className="bg-gray-100 flex items-center justify-center p-6">
               <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden border border-gray-200">
-                <img src="/lovable-uploads/33319893-eb6e-48e5-8f6d-714d66639777.png" alt="Open Collective Platform Screenshot" className="w-full h-full object-contain" />
+                <img
+                  src="/lovable-uploads/33319893-eb6e-48e5-8f6d-714d66639777.png"
+                  alt="Open Collective Platform Screenshot"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 
 export default About;

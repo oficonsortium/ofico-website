@@ -75,9 +75,9 @@ const About = () => {
               </h2>
               <div className="h-1 w-16 bg-ofi-500 mb-6"></div>
               <p className="text-gray-600 mb-4">
-                As stewards of the classic <a href="">Open Collective platform</a>, we maintain and develop the
-                infrastructure that thousands of communities rely on for transparent financial collaboration. This
-                includes:
+                As stewards of the classic <a href="https://opencollective.com/home">Open Collective platform</a>, we
+                maintain and develop the infrastructure that thousands of communities rely on for transparent financial
+                collaboration. This includes:
               </p>
               <ul className="space-y-2 text-gray-600 mb-6">
                 <li className="flex items-start">
@@ -102,11 +102,13 @@ const About = () => {
             </div>
             <div className="bg-gray-100 flex items-center justify-center p-6">
               <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden border border-gray-200">
-                <img
-                  src="/lovable-uploads/33319893-eb6e-48e5-8f6d-714d66639777.png"
-                  alt="Open Collective Platform Screenshot"
-                  className="w-full h-full object-contain"
-                />
+                <a href="https://opencollective.com/home">
+                  <img
+                    src="/lovable-uploads/33319893-eb6e-48e5-8f6d-714d66639777.png"
+                    alt="classic Open Collective Platform Homepage screenshot"
+                    className="w-full h-full object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>

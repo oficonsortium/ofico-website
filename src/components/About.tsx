@@ -75,13 +75,16 @@ const About = () => {
               </h2>
               <div className="h-1 w-16 bg-ofi-500 mb-6"></div>
               <p className="text-gray-600 mb-4">
-                As stewards of the Open Collective platform, we maintain and develop the infrastructure that thousands
-                of communities rely on for transparent financial collaboration. This includes:
+                As stewards of the classic <a href="">Open Collective platform</a>, we maintain and develop the
+                infrastructure that thousands of communities rely on for transparent financial collaboration. This
+                includes:
               </p>
               <ul className="space-y-2 text-gray-600 mb-6">
                 <li className="flex items-start">
                   <span className="text-ofi-600 mr-2">•</span>
-                  <span>Managing the open source codebase and infrastructure</span>
+                  <span>
+                    Managing the <a href="https://github.com/opencollective">open source</a> codebase and infrastructure
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-ofi-600 mr-2">•</span>

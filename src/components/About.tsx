@@ -75,14 +75,14 @@ const About = () => {
               </h2>
               <div className="h-1 w-16 bg-ofi-500 mb-6"></div>
               <p className="text-gray-600 mb-4">
-                In October 2024, we took over the classic Open Collective platform as it existed at that time. Now
+                In October 2024, we took over the classic{' '}
+                <a href="https://opencollective.com/home">Open Collective platform</a> as it existed at that time. Now
                 operated by our 100% owned subsidiary, OFi Technologies, the same team continues its work under a
                 community-governed, non-profit structure.
               </p>
               <p className="text-gray-600 mb-4">
-                As stewards of the "classic" <a href="https://opencollective.com/home">Open Collective platform</a>, we
-                maintain and develop the infrastructure that thousands of communities rely on for transparent financial
-                collaboration. This includes:
+                We maintain and develop the infrastructure that thousands of communities rely on for transparent
+                financial collaboration. This includes:
               </p>
               <ul className="space-y-2 text-gray-600 mb-6">
                 <li className="flex items-start">

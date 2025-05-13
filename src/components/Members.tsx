@@ -113,7 +113,7 @@ const Members = () => {
           <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
             <div className="flex justify-center mb-6">
               <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-teal-200 to-teal-400">
-                <img src="/lovable-uploads/2d3cc2ac-97ab-43cb-ae72-51610118aca0.png" alt="Gift Collective" className="w-24 h-24 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                <img src="/lovable-uploads/9373d83b-8184-441f-ac58-30279906ddf5.png" alt="Gift Collective" className="w-24 h-24 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
               </div>
             </div>
             <h3 className="text-xl font-semibold text-center mb-2">Gift Collective</h3>

@@ -159,12 +159,8 @@ const Members = () => {
           {/* Raft Foundation */}
           <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
             <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
+              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-white border border-gray-200">
                 <img src="/lovable-uploads/raft-foundation-official-logo.png" alt="Raft Foundation" className="max-w-20 max-h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain" />
-                <div className="absolute inset-0 bg-cover bg-center" style={{
-                backgroundImage: `url('/lovable-uploads/b9d2464e-7d80-4c18-9752-06de4bdcc6a3.png')`,
-                opacity: '0.3'
-              }}></div>
               </div>
             </div>
             <h3 className="text-xl font-semibold text-center mb-2">Raft Foundation</h3>

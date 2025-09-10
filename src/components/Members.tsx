@@ -231,6 +231,15 @@ const Members = () => {
               >
                 <SiOpencollective className="h-4 w-4" />
               </a>
+              <a 
+                href="https://www.linkedin.com/company/the-social-change-nest/"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                title="LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
             </div>
           </div>
         </div>

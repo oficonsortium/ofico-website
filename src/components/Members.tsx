@@ -14,7 +14,7 @@ const Members = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {/* Open Source Collective */}
           <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
             <div className="flex justify-center mb-6">
@@ -186,6 +186,44 @@ const Members = () => {
               </a>
               <a 
                 href="https://opencollective.com/raft"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                title="Open Collective"
+              >
+                <SiOpencollective className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+          
+          {/* The Social Change Nest */}
+          <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="flex justify-center mb-6">
+              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
+                <img src="/lovable-uploads/social-change-nest-logo.png" alt="The Social Change Nest" className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain" />
+                <div className="absolute inset-0 bg-cover bg-center" style={{
+                backgroundImage: `url('/lovable-uploads/b9d2464e-7d80-4c18-9752-06de4bdcc6a3.png')`,
+                opacity: '0.3'
+              }}></div>
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold text-center mb-2">The Social Change Nest</h3>
+            <p className="text-gray-600 text-center mb-4">
+              We break the barriers. You ignite the change. Fiscal hosting and capacity building for social change.
+            </p>
+            {/* Social Icons */}
+            <div className="flex justify-center space-x-3 mt-2">
+              <a 
+                href="https://thesocialchangenest.org/"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
+                title="Website"
+              >
+                <Globe className="h-4 w-4" />
+              </a>
+              <a 
+                href="https://opencollective.com/the-social-change-nest"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-500 hover:text-ofi-600 transition-colors p-2"

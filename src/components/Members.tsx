@@ -174,7 +174,7 @@ const Members = () => {
             {/* Social Icons */}
             <div className="flex justify-center space-x-3 mt-2">
               <a 
-                href="#"
+                href="https://raft.foundation/"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-500 hover:text-ofi-600 transition-colors p-2"

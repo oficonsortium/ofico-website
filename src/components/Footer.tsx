@@ -1,7 +1,6 @@
-import React from 'react';
-import { Discord, Linkedin } from '@styled-icons/fa-brands';
-import { SiOpencollective } from '@icons-pack/react-simple-icons';
-import { Link, useNavigate } from 'react-router-dom';
+import { SiDiscord, SiOpencollective } from '@icons-pack/react-simple-icons';
+import { Linkedin } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -39,7 +38,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                <Discord className="h-5 w-5" />
+                <SiDiscord className="h-5 w-5" />
                 <span className="sr-only">Discord</span>
               </a>
               <a

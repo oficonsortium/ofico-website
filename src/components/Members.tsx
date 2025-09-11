@@ -209,7 +209,7 @@ const Members = () => {
             </div>
             <h3 className="text-xl font-semibold text-center mb-2">The Social Change Nest</h3>
             <p className="text-gray-600 text-center mb-4">
-              We break the barriers. You ignite the change. Fiscal hosting and capacity building for social change.
+              Fiscal hosting and capacity building for social change.
             </p>
             {/* Social Icons */}
             <div className="flex justify-center space-x-3 mt-2">

@@ -2,22 +2,16 @@ name = "ofico-website"
 main = "worker/index.ts"
 compatibility_date = "2026-09-01"
 
-[assets]
-directory = "./dist"
-binding = "ASSETS"
-not_found_handling = "single-page-application"
-run_worker_first = true
-
-# Development / preview: `npm run deploy:dev`
-[env.dev]
-name = "ofico-website-dev"
-
-# Production. Deployed by Cloudflare Workers Builds on push to main;
-# other branches get a preview URL. Manual fallback: `npm run deploy`.
-[env.production]
-name = "ofico-website"
+# Deployed by Cloudflare Workers Builds: push to main -> production,
+# any other branch -> preview URL. Manual fallback: `npm run deploy`.
 preview_urls = true
 routes = [
   { pattern = "oficonsortium.org", custom_domain = true },
   { pattern = "www.oficonsortium.org", custom_domain = true },
 ]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+run_worker_first = true

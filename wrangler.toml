@@ -1,14 +1,17 @@
 name = "ofico-website"
+main = "worker/index.ts"
 compatibility_date = "2026-09-01"
 
 [assets]
 directory = "./dist"
+binding = "ASSETS"
 not_found_handling = "single-page-application"
+run_worker_first = true
 
 # Development / preview: `npm run deploy:dev`
 [env.dev]
 name = "ofico-website-dev"
 
-# Production: `npm run deploy` (custom domain attached in the Cloudflare dashboard)
+# Production: `npm run deploy` (custom domains attached in the Cloudflare dashboard)
 [env.production]
 name = "ofico-website"

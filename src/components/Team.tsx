@@ -9,20 +9,13 @@ type TeamMember = {
   linkedIn?: string;
 };
 
-const teamMembers: TeamMember[] = [
+const executiveCommittee: TeamMember[] = [
   {
     name: 'Nathan Hewitt',
     role: 'President',
     image: '/images/nathan-hewitt.jpg',
     linkedIn: 'https://www.linkedin.com/in/nthnh/',
     initials: 'NH',
-  },
-  {
-    name: 'Pia Mancini',
-    role: 'Board Member',
-    image: '/lovable-uploads/55a6f0c6-ea75-48a2-a5d9-c1bd5a077f30.png',
-    linkedIn: 'https://www.linkedin.com/in/piamancini/',
-    initials: 'PM',
   },
   {
     name: 'Fran\u00e7ois Hodierne',
@@ -38,6 +31,16 @@ const teamMembers: TeamMember[] = [
     linkedIn: 'https://www.linkedin.com/in/benjamuk/',
     initials: 'BN',
   },
+];
+
+const boardMembers: TeamMember[] = [
+  {
+    name: 'Pia Mancini',
+    role: 'Board Member',
+    image: '/lovable-uploads/55a6f0c6-ea75-48a2-a5d9-c1bd5a077f30.png',
+    linkedIn: 'https://www.linkedin.com/in/piamancini/',
+    initials: 'PM',
+  },
   {
     name: 'Esther Foreman',
     role: 'Board Member',
@@ -46,6 +49,30 @@ const teamMembers: TeamMember[] = [
     initials: 'EF',
   },
 ];
+
+const MemberCard = ({ member }: { member: TeamMember }) => (
+  <div className="text-center">
+    <div className="w-20 h-20 mx-auto mb-3 overflow-hidden rounded-full bg-gray-100 flex items-center justify-center">
+      {member.image ? (
+        <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+      ) : (
+        <span className="text-lg font-semibold text-gray-500">{member.initials}</span>
+      )}
+    </div>
+    <h3 className="text-sm font-semibold text-gray-900">{member.name}</h3>
+    <p className="text-xs text-gray-500 mt-0.5 mb-1.5">{member.role}</p>
+    {member.linkedIn && (
+      <a
+        href={member.linkedIn}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex text-gray-400 hover:text-navy-600 transition-colors"
+      >
+        <Linkedin className="h-3.5 w-3.5" />
+      </a>
+    )}
+  </div>
+);
 
 const Team = () => {
   return (
@@ -59,34 +86,17 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 max-w-2xl mx-auto mb-20">
-          {teamMembers.map(member => (
-            <div key={member.name} className="text-center">
-              <div className="w-20 h-20 mx-auto mb-3 overflow-hidden rounded-full bg-gray-100 flex items-center justify-center">
-                {member.image ? (
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <span className="text-lg font-semibold text-gray-500">{member.initials}</span>
-                )}
-              </div>
-              <h3 className="text-sm font-semibold text-gray-900">{member.name}</h3>
-              <p className="text-xs text-gray-500 mt-0.5 mb-1.5">{member.role}</p>
-              {member.linkedIn && (
-                <a
-                  href={member.linkedIn}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex text-gray-400 hover:text-navy-600 transition-colors"
-                >
-                  <Linkedin className="h-3.5 w-3.5" />
-                </a>
-              )}
-            </div>
-          ))}
+        <div className="max-w-2xl mx-auto mb-20 space-y-12">
+          <div className="grid grid-cols-3 gap-6">
+            {executiveCommittee.map(member => (
+              <MemberCard key={member.name} member={member} />
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-6 max-w-sm mx-auto">
+            {boardMembers.map(member => (
+              <MemberCard key={member.name} member={member} />
+            ))}
+          </div>
         </div>
 
         {/* Join section */}

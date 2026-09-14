@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -5,35 +6,35 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 20% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 20% 10%;
 
-    --primary: 275 83% 55%; /* Purple from logo */
-    --primary-foreground: 210 40% 98%;
+    --primary: 225 65% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 225 65% 45%; /* Blue from logo */
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 20% 10%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 46%;
 
-    --accent: 20 85% 57%; /* Orange from logo */
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 20 85% 57%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 275 83% 55%; /* Purple from logo */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 225 65% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -90,7 +91,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
   html {
@@ -100,18 +102,26 @@
 
 @layer components {
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-20 md:py-32;
   }
-  
+
   .container {
-    @apply px-4 md:px-6;
+    @apply px-5 md:px-8;
   }
-  
+
   .fade-in-section {
-    @apply opacity-0 translate-y-8 transition-all duration-700;
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
   }
-  
+
   .fade-in-section.is-visible {
     @apply opacity-100 translate-y-0;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-navy-600 via-purple-600 to-ofi-500;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-lg;
   }
 }

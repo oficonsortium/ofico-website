@@ -15,3 +15,7 @@ name = "ofico-website-dev"
 # Production: `npm run deploy` (custom domains attached in the Cloudflare dashboard)
 [env.production]
 name = "ofico-website"
+routes = [
+  { pattern = "oficonsortium.org", custom_domain = true },
+  { pattern = "www.oficonsortium.org", custom_domain = true },
+]

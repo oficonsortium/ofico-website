@@ -1,247 +1,130 @@
 
-import { Globe, ExternalLink, Linkedin } from "lucide-react";
-import { SiOpencollective } from "@icons-pack/react-simple-icons";
+import { Globe, Linkedin } from 'lucide-react';
+import { SiOpencollective } from '@icons-pack/react-simple-icons';
+
+const members = [
+  {
+    name: 'Open Source Collective',
+    description: 'Non-profit fiscal host promoting a healthy and sustainable open source ecosystem.',
+    logo: '/lovable-uploads/eb6f1d02-9007-4e03-8786-deee07795994.png',
+    links: {
+      website: 'https://oscollective.org',
+      oc: 'https://opencollective.com/opensource',
+      linkedin: 'https://www.linkedin.com/company/opensourcecollective/',
+    },
+  },
+  {
+    name: 'Open Collective Europe',
+    description:
+      'European Non-profit \u2014 Providing fiscal sponsorship to communities and projects from garden collectives to global democracy initiatives.',
+    logo: '/lovable-uploads/148e2dea-b1bc-423c-b072-42d46f883b10.png',
+    links: {
+      website: 'https://www.oceurope.org/',
+      oc: 'https://opencollective.com/europe',
+      linkedin: 'https://www.linkedin.com/company/open-collective-europe/',
+    },
+  },
+  {
+    name: 'Gift Collective',
+    description:
+      'New Zealand Charity \u2014 Supporting projects with a charitable mission in Aotearoa, transforming how charity funding works through fundholding.',
+    logo: '/lovable-uploads/9373d83b-8184-441f-ac58-30279906ddf5.png',
+    links: {
+      website: 'https://giftcollective.nz/',
+      oc: 'https://opencollective.com/giftcollective',
+      linkedin: 'https://www.linkedin.com/company/giftcollectivenz/',
+    },
+  },
+  {
+    name: 'Raft Foundation',
+    description: 'US-based 501(c)(3) fiscal sponsor that brings communities together to support neighbors in need.',
+    logo: '/lovable-uploads/raft-foundation-official-logo.png',
+    links: {
+      website: 'https://raft.foundation/',
+      oc: 'https://opencollective.com/raft',
+    },
+  },
+  {
+    name: 'The Social Change Nest',
+    description: 'Fiscal hosting and capacity building for social change.',
+    logo: '/lovable-uploads/social-change-nest-logo.png',
+    links: {
+      website: 'https://thesocialchangenest.org/',
+      oc: 'https://opencollective.com/the-social-change-nest',
+      linkedin: 'https://www.linkedin.com/company/the-social-change-nest/',
+    },
+  },
+];
 
 const Members = () => {
   return (
-    <section id="members" className="section-padding bg-white">
+    <section id="members" className="section-padding bg-gray-50/50">
       <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Members</h2>
-          <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>
-          <p className="text-gray-600">
-            The OFi Consortium is formed by these leading organizations committed to advancing open finance principles. They represent thousands of Collectives and guide our strategic direction.
+        <div className="max-w-2xl mb-16">
+          <p className="text-sm font-semibold uppercase tracking-widest text-navy-500 mb-3">Members</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-5">
+            Organizations leading open finance
+          </h2>
+          <p className="text-lg text-gray-500 leading-relaxed">
+            The OFi Consortium is formed by these leading organizations committed to advancing open finance principles.
+            They represent thousands of Collectives and guide our strategic direction.
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-          {/* Open Source Collective */}
-          <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
-                <img src="/lovable-uploads/eb6f1d02-9007-4e03-8786-deee07795994.png" alt="Open Source Collective" className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                <div className="absolute inset-0 bg-cover bg-center" style={{
-                backgroundImage: `url('/lovable-uploads/af4e1e5f-f5b6-4e1a-a33c-7971d856bf40.png')`,
-                opacity: '0.3'
-              }}></div>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold text-center mb-2">Open Source Collective</h3>
-            <p className="text-gray-600 text-center mb-4">
-              Non-profit fiscal host promoting a healthy and sustainable open source ecosystem.
-            </p>
-            {/* Social Icons */}
-            <div className="flex justify-center space-x-3 mt-2">
-              <a 
-                href="https://oscollective.org" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Website"
-              >
-                <Globe className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://opencollective.com/opensource" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Open Collective"
-              >
-                <SiOpencollective className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/opensourcecollective/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="LinkedIn"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
-            </div>
-          </div>
-          
-          {/* Open Collective Europe */}
-          <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
-                <img src="/lovable-uploads/148e2dea-b1bc-423c-b072-42d46f883b10.png" alt="Open Collective Europe" className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                <div className="absolute inset-0 bg-cover bg-center" style={{
-                backgroundImage: `url('/lovable-uploads/b9d2464e-7d80-4c18-9752-06de4bdcc6a3.png')`,
-                opacity: '0.3'
-              }}></div>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold text-center mb-2">Open Collective Europe</h3>
-            <p className="text-gray-600 text-center mb-4">
-              European Non-profit - Providing fiscal sponsorship to communities and projects from garden collectives to global democracy initiatives.
-            </p>
-            {/* Social Icons */}
-            <div className="flex justify-center space-x-3 mt-2">
-              <a 
-                href="https://www.oceurope.org/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Website"
-              >
-                <Globe className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://opencollective.com/europe" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Open Collective"
-              >
-                <SiOpencollective className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/open-collective-europe/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="LinkedIn"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
-            </div>
-          </div>
-          
-          {/* Gift Collective */}
-          <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
-                <img src="/lovable-uploads/9373d83b-8184-441f-ac58-30279906ddf5.png" alt="Gift Collective" className="w-24 h-24 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                <div className="absolute inset-0 bg-cover bg-center" style={{
-                backgroundImage: `url('/lovable-uploads/b9d2464e-7d80-4c18-9752-06de4bdcc6a3.png')`,
-                opacity: '0.3'
-              }}></div>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold text-center mb-2">Gift Collective</h3>
-            <p className="text-gray-600 text-center mb-4">
-              New Zealand Charity - Supporting projects with a charitable mission in Aotearoa, transforming how charity funding works through fundholding.
-            </p>
-            {/* Social Icons */}
-            <div className="flex justify-center space-x-3 mt-2">
-              <a 
-                href="https://giftcollective.nz/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Website"
-              >
-                <Globe className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://opencollective.com/giftcollective"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Open Collective"
-              >
-                <SiOpencollective className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/giftcollectivenz/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="LinkedIn"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
-            </div>
-          </div>
-          
-          {/* Raft Foundation */}
-          <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded p-2">
-                  <img src="/lovable-uploads/raft-foundation-official-logo.png" alt="Raft Foundation" className="max-w-16 max-h-16 object-contain" />
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+          {members.map(member => (
+            <div
+              key={member.name}
+              className="group bg-white rounded-2xl p-7 border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-all duration-300"
+            >
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center p-3 group-hover:scale-105 transition-transform duration-300">
+                  <img
+                    src={member.logo}
+                    alt={member.name}
+                    className="max-w-full max-h-full object-contain"
+                  />
                 </div>
-                <div className="absolute inset-0 bg-cover bg-center" style={{
-                backgroundImage: `url('/lovable-uploads/b9d2464e-7d80-4c18-9752-06de4bdcc6a3.png')`,
-                opacity: '0.3'
-              }}></div>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 text-center mb-2">{member.name}</h3>
+              <p className="text-sm text-gray-500 text-center leading-relaxed mb-5">{member.description}</p>
+              <div className="flex justify-center gap-1">
+                {member.links.website && (
+                  <a
+                    href={member.links.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg text-gray-400 hover:text-navy-600 hover:bg-navy-50 transition-all duration-200"
+                    title="Website"
+                  >
+                    <Globe className="h-4 w-4" />
+                  </a>
+                )}
+                {member.links.oc && (
+                  <a
+                    href={member.links.oc}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg text-gray-400 hover:text-navy-600 hover:bg-navy-50 transition-all duration-200"
+                    title="Open Collective"
+                  >
+                    <SiOpencollective className="h-4 w-4" />
+                  </a>
+                )}
+                {member.links.linkedin && (
+                  <a
+                    href={member.links.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg text-gray-400 hover:text-navy-600 hover:bg-navy-50 transition-all duration-200"
+                    title="LinkedIn"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                )}
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-center mb-2">Raft Foundation</h3>
-            <p className="text-gray-600 text-center mb-4">
-              US-based 501(c)(3) fiscal sponsor that brings communities together to support neighbors in need.
-            </p>
-            {/* Social Icons */}
-            <div className="flex justify-center space-x-3 mt-2">
-              <a 
-                href="https://raft.foundation/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Website"
-              >
-                <Globe className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://opencollective.com/raft"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Open Collective"
-              >
-                <SiOpencollective className="h-4 w-4" />
-              </a>
-            </div>
-          </div>
-          
-          {/* The Social Change Nest */}
-          <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 rounded-lg relative overflow-hidden bg-gradient-to-br from-blue-200 to-indigo-300">
-                <img src="/lovable-uploads/social-change-nest-logo.png" alt="The Social Change Nest" className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain" />
-                <div className="absolute inset-0 bg-cover bg-center" style={{
-                backgroundImage: `url('/lovable-uploads/b9d2464e-7d80-4c18-9752-06de4bdcc6a3.png')`,
-                opacity: '0.3'
-              }}></div>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold text-center mb-2">The Social Change Nest</h3>
-            <p className="text-gray-600 text-center mb-4">
-              Fiscal hosting and capacity building for social change.
-            </p>
-            {/* Social Icons */}
-            <div className="flex justify-center space-x-3 mt-2">
-              <a 
-                href="https://thesocialchangenest.org/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Website"
-              >
-                <Globe className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://opencollective.com/the-social-change-nest"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="Open Collective"
-              >
-                <SiOpencollective className="h-4 w-4" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/the-social-change-nest/"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-500 hover:text-ofi-600 transition-colors p-2"
-                title="LinkedIn"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

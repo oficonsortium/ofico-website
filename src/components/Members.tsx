@@ -14,13 +14,13 @@ const members = [
     },
   },
   {
-    name: 'Open Collective Europe',
+    name: 'Open Collective Europe Foundation',
     description:
       'European Non-profit \u2014 Providing fiscal sponsorship to communities and projects from garden collectives to global democracy initiatives.',
     logo: '/lovable-uploads/148e2dea-b1bc-423c-b072-42d46f883b10.png',
     links: {
       website: 'https://www.oceurope.org/',
-      oc: 'https://opencollective.com/europe',
+      oc: 'https://opencollective.com/oce-foundation-eur',
       linkedin: 'https://www.linkedin.com/company/open-collective-europe/',
     },
   },

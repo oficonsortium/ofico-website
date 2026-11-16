@@ -29,14 +29,14 @@ const executiveCommittee: TeamMember[] = [
 const boardMembers: TeamMember[] = [
   {
     name: 'Pia Mancini',
-    role: 'Board Member',
+    role: 'Director',
     image: '/lovable-uploads/55a6f0c6-ea75-48a2-a5d9-c1bd5a077f30.png',
     linkedIn: 'https://www.linkedin.com/in/piamancini/',
     initials: 'PM',
   },
   {
     name: 'Esther Foreman',
-    role: 'Board Member',
+    role: 'Director',
     image: '/images/esther-foreman.jpg',
     linkedIn: 'https://www.linkedin.com/in/estherforeman/',
     initials: 'EF',

@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/10 border border-gray-200/60">
               <img
-                src="/images/IMG_2734.jpeg"
+                src="/images/team-retreat.jpg"
                 alt="OFi Consortium"
                 className="w-full aspect-video object-cover"
               />

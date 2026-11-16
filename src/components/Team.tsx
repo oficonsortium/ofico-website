@@ -12,7 +12,7 @@ type TeamMember = {
 const executiveCommittee: TeamMember[] = [
   {
     name: 'Benjamin Nickolls',
-    role: 'President',
+    role: 'President & Treasurer',
     image: '/lovable-uploads/08cd6c8a-6af0-4eae-9992-ff08b0974151.png',
     linkedIn: 'https://www.linkedin.com/in/benjamuk/',
     initials: 'BN',

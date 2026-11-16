@@ -1,11 +1,11 @@
-
 import { Globe, Linkedin } from 'lucide-react';
 import { SiOpencollective } from '@icons-pack/react-simple-icons';
 
 const members = [
   {
     name: 'Open Source Collective',
-    description: 'Non-profit fiscal host promoting a healthy and sustainable open source ecosystem.',
+    description:
+      'Non-profit fiscal host for open source projects, offering transparent fundraising, money management and legal representation.',
     logo: '/lovable-uploads/eb6f1d02-9007-4e03-8786-deee07795994.png',
     links: {
       website: 'https://oscollective.org',
@@ -16,7 +16,7 @@ const members = [
   {
     name: 'Open Collective Europe Foundation',
     description:
-      'European Non-profit \u2014 Providing fiscal sponsorship to communities and projects from garden collectives to global democracy initiatives.',
+      'European foundation connecting collective action and philanthropy, giving nonprofit initiatives a home and bringing resources closer to action.',
     logo: '/lovable-uploads/148e2dea-b1bc-423c-b072-42d46f883b10.png',
     links: {
       website: 'https://www.oceurope.org/',
@@ -27,7 +27,7 @@ const members = [
   {
     name: 'Gift Collective',
     description:
-      'New Zealand Charity \u2014 Supporting projects with a charitable mission in Aotearoa, transforming how charity funding works through fundholding.',
+      'Charity fundholder for Aotearoa New Zealand, helping charitable initiatives receive funding, manage expenses and issue donation receipts without becoming a charity.',
     logo: '/lovable-uploads/9373d83b-8184-441f-ac58-30279906ddf5.png',
     links: {
       website: 'https://giftcollective.nz/',
@@ -46,7 +46,7 @@ const members = [
   },
   {
     name: 'The Social Change Nest',
-    description: 'Fiscal hosting and capacity building for social change.',
+    description: 'Fiscal hosting that removes financial barriers so groups can focus on making change.',
     logo: '/lovable-uploads/social-change-nest-logo.png',
     links: {
       website: 'https://thesocialchangenest.org/',
@@ -79,11 +79,7 @@ const Members = () => {
             >
               <div className="flex justify-center mb-6">
                 <div className="w-20 h-20 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center p-3 group-hover:scale-105 transition-transform duration-300">
-                  <img
-                    src={member.logo}
-                    alt={member.name}
-                    className="max-w-full max-h-full object-contain"
-                  />
+                  <img src={member.logo} alt={member.name} className="max-w-full max-h-full object-contain" />
                 </div>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 text-center mb-2">{member.name}</h3>

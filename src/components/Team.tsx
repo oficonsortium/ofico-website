@@ -1,5 +1,6 @@
 
-import { Linkedin, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import Linkedin from '@/components/icons/Linkedin';
 
 type TeamMember = {
   name: string;

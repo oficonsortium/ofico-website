@@ -1,49 +1,53 @@
 
-import { MapPin, Mail } from "lucide-react";
+import { MapPin, Mail, ArrowUpRight } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="section-padding bg-gray-50">
+    <section id="contact" className="section-padding bg-gray-50/50">
       <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-          <div className="h-1 w-20 bg-ofi-500 mx-auto mb-6"></div>
-          <p className="text-gray-600">
+        <div className="max-w-2xl mb-16">
+          <p className="text-sm font-semibold uppercase tracking-widest text-navy-500 mb-3">Contact</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-5">Get in Touch</h2>
+          <p className="text-lg text-gray-500 leading-relaxed">
             Have questions about our work or interested in joining the consortium? We'd love to hear from you.
           </p>
         </div>
 
-        <div className="max-w-lg mx-auto">
-          <div className="bg-white rounded-lg shadow-sm p-6 md:p-8 mb-8">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
-            
-            <div className="space-y-6">
-              <div className="flex">
-                <div className="flex-shrink-0 mt-1">
-                  <MapPin className="h-6 w-6 text-ofi-600" />
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium text-gray-900">Address</h4>
-                  <p className="text-gray-600 mt-1">
-                    440 N Barranca Ave #3489<br />
-                    Covina, CA 91723<br />
-                    USA
-                  </p>
+        <div className="max-w-lg">
+          <div className="space-y-6">
+            <div className="flex gap-5 p-6 rounded-2xl bg-white border border-gray-100">
+              <div className="flex-shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center">
+                  <MapPin className="h-5 w-5 text-navy-600" />
                 </div>
               </div>
+              <div>
+                <h4 className="text-sm font-semibold text-gray-900 mb-1">Address</h4>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  440 N Barranca Ave #3489
+                  <br />
+                  Covina, CA 91723
+                  <br />
+                  USA
+                </p>
+              </div>
+            </div>
 
-              <div className="flex">
-                <div className="flex-shrink-0 mt-1">
-                  <Mail className="h-6 w-6 text-ofi-600" />
+            <div className="flex gap-5 p-6 rounded-2xl bg-white border border-gray-100">
+              <div className="flex-shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center">
+                  <Mail className="h-5 w-5 text-navy-600" />
                 </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium text-gray-900">Email</h4>
-                  <p className="text-gray-600 mt-1">
-                    <a href="mailto:info@oficonsortium.org" className="hover:text-ofi-600">
-                      info@oficonsortium.org
-                    </a>
-                  </p>
-                </div>
+              </div>
+              <div>
+                <h4 className="text-sm font-semibold text-gray-900 mb-1">Email</h4>
+                <a
+                  href="mailto:info@oficonsortium.org"
+                  className="text-sm text-gray-500 hover:text-navy-600 transition-colors inline-flex items-center gap-1 group"
+                >
+                  info@oficonsortium.org
+                  <ArrowUpRight className="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </a>
               </div>
             </div>
           </div>

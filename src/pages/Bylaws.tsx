@@ -12,7 +12,7 @@ const Bylaws = () => {
           
           <div className="mb-8 flex justify-center">
             <a 
-              href="https://drive.google.com/file/d/1pda5K7CN-ZEWpnsDkmMG6n-V2qloJsXn/view?usp=drive_link" 
+              href="/documents/ofico-bylaws.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block"

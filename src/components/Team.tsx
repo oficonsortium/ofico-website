@@ -11,11 +11,11 @@ type TeamMember = {
 
 const executiveCommittee: TeamMember[] = [
   {
-    name: 'Nathan Hewitt',
+    name: 'Benjamin Nickolls',
     role: 'President',
-    image: '/images/nathan-hewitt.jpg',
-    linkedIn: 'https://www.linkedin.com/in/nthnh/',
-    initials: 'NH',
+    image: '/lovable-uploads/08cd6c8a-6af0-4eae-9992-ff08b0974151.png',
+    linkedIn: 'https://www.linkedin.com/in/benjamuk/',
+    initials: 'BN',
   },
   {
     name: 'Fran\u00e7ois Hodierne',
@@ -23,13 +23,6 @@ const executiveCommittee: TeamMember[] = [
     image: '/lovable-uploads/8bce804d-840d-43c8-b33b-9380933cc196.png',
     linkedIn: 'https://www.linkedin.com/in/francoishodierne/',
     initials: 'FH',
-  },
-  {
-    name: 'Benjamin Nickolls',
-    role: 'Treasurer',
-    image: '/lovable-uploads/08cd6c8a-6af0-4eae-9992-ff08b0974151.png',
-    linkedIn: 'https://www.linkedin.com/in/benjamuk/',
-    initials: 'BN',
   },
 ];
 
@@ -87,7 +80,7 @@ const Team = () => {
         </div>
 
         <div className="max-w-2xl mx-auto mb-20 space-y-12">
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 gap-6 max-w-sm mx-auto">
             {executiveCommittee.map(member => (
               <MemberCard key={member.name} member={member} />
             ))}

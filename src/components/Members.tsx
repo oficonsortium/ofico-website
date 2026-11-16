@@ -1,4 +1,5 @@
-import { Globe, Linkedin } from 'lucide-react';
+import { Globe } from 'lucide-react';
+import Linkedin from '@/components/icons/Linkedin';
 import { SiOpencollective } from '@icons-pack/react-simple-icons';
 
 const members = [

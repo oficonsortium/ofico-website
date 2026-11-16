@@ -1,5 +1,5 @@
 import { SiDiscord, SiOpencollective } from '@icons-pack/react-simple-icons';
-import { Linkedin } from 'lucide-react';
+import Linkedin from '@/components/icons/Linkedin';
 import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
